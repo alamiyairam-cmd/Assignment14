@@ -1,0 +1,13 @@
+import numpy as np
+arr = np.random.randint(20, 81, (4, 5))
+print("Matrix:")
+print(arr)
+print("\nMinimum Value:", np.min(arr))
+print("Maximum Value:", np.max(arr))
+print("\nSum of All Elements:", np.sum(arr))
+print("Mean:", np.mean(arr))
+print("Standard Deviation:", np.std(arr))
+print("\nRow-wise Sum:")
+print(np.sum(arr, axis=1))
+print("\nColumn-wise Sum:")
+print(np.sum(arr, axis=0))
