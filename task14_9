@@ -1,0 +1,12 @@
+import numpy as np
+arr = np.random.randint(1, 101, 15)
+print("Array:")
+print(arr)
+num = int(input("\nEnter number to search: "))
+index = np.where(arr == num)
+if len(index[0]) > 0:
+    print("Number found at index:", index[0])
+else:
+    print("Number not found.")
+count = np.count_nonzero(arr == num)
+print("Occurrences:", count)
