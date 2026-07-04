@@ -1,0 +1,10 @@
+import numpy as np
+arr = np.random.randint(10, 100, (4, 5))
+print("Original Matrix:")
+print(arr)
+print("\nRow-wise Sorted Matrix:")
+print(np.sort(arr, axis=1))
+print("\nColumn-wise Sorted Matrix:")
+print(np.sort(arr, axis=0))
+print("\nCompletely Sorted Array:")
+print(np.sort(arr, axis=None))
