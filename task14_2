@@ -1,0 +1,11 @@
+import numpy as np
+arr = np.random.randint(1, 51, 20)
+print("Array:")
+print(arr)
+print("\nMinimum Value:", np.min(arr))
+print("Index of Minimum Value:", np.argmin(arr))
+print("\nMaximum Value:", np.max(arr))
+print("Index of Maximum Value:", np.argmax(arr))
+print("\nSum of Elements:", np.sum(arr))
+print("Mean:", np.mean(arr))
+print("Standard Deviation:", np.std(arr))
