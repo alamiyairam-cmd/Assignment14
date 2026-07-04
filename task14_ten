@@ -1,0 +1,21 @@
+import numpy as np
+
+try:
+    # Number of students
+    n = int(input("Enter number of students: "))
+    marks = np.random.randint(35, 101, n)
+    print("\nStudent Marks:")
+    print(marks)
+    # Statistics
+    print("\nHighest Marks:", np.max(marks))
+    print("Lowest Marks:", np.min(marks))
+    print("Average Marks:", np.mean(marks))
+    print("Median Marks:", np.median(marks))
+    print("Standard Deviation:", np.std(marks))
+    print("\nMarks Above Average:")
+    print(marks[marks > np.mean(marks)])
+    # Pass/Fail Count
+    print("\nPassed Students:", np.count_nonzero(marks >= 40))
+    print("Failed Students:", np.count_nonzero(marks < 40))
+except ValueError:
+    print("Please enter a valid integer.")
